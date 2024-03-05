@@ -18,7 +18,7 @@ This container allows you to run your code in a Linux environment, without wonde
 6. Run `./run.sh` to run the Docker container
     - Note: If you are on Apple Silicon, you may see the warning: 
     >WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
-7. You should now be in the container's shell, in the app directory. Run `pwd` to verify.
+7. You should now be in the container's shell, in the `app` directory. Run `pwd` to verify.
 8. Run `./clone.sh` to clone your repository
     - Input your username and PAT when prompted
 9. Use `cd` to navigate to your repository
