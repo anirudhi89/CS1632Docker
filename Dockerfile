@@ -9,4 +9,4 @@ WORKDIR /app
 
 COPY * .
 
-CMD ["/bin/bash"]
+CMD ["bash", "-c", "chmod +x ./clone.sh && /bin/bash"]
