@@ -9,19 +9,21 @@ This container allows you to run your code in a Linux environment, without wonde
 
 ## To use:
 1. Install and open Docker Desktop: https://www.docker.com/products/docker-desktop/
-2. Clone this repository
+2. If you are on Apple Silicon, click on settings in the top right corner, and then navigate to the Features in Development tab. Check the box next to "Use Rosetta for x86/amd64 emulation on Apple Silicon"
+    - This improves performance for x86 in comparison to QEMU
+3. Clone this repository
     - `$ git clone https://github.com/anirudhi89/CS1632Docker.git`
-3. Using a text editor of your choice, modify `clone.sh` to contain your git repository URL
-4. Run `chmod +x ./run.sh` and `chmod +x ./build.sh` to make the scripts executable
-5. Run `./build.sh` to build the Docker image
+4. Using a text editor of your choice, modify `clone.sh` to contain your git repository URL
+5. Run `chmod +x ./run.sh` and `chmod +x ./build.sh` to make the scripts executable
+6. Run `./build.sh` to build the Docker image
     - Keep in mind this may take a while
-6. Run `./run.sh` to run the Docker container
+7. Run `./run.sh` to run the Docker container
     - Note: If you are on Apple Silicon, you may see the warning: 
     >WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
-7. You should now be in the container's shell, in the `app` directory. Run `pwd` to verify.
-8. Run `./clone.sh` to clone your repository
+8. You should now be in the container's shell, in the `app` directory. Run `pwd` to verify.
+9. Run `./clone.sh` to clone your repository
     - Input your username and PAT when prompted
-9. Use `cd` to navigate to your repository
+10. Use `cd` to navigate to your repository
 
 Note that you should push your changes to your repository before exiting the container, as the container is ephemeral and all data will be destroyed when you exit.
 You can push your code to GitHub using the following commands:
