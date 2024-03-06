@@ -10,7 +10,7 @@ This container allows you to run your code in a Linux environment, without wonde
 ## To use:
 1. Install and open Docker Desktop: https://www.docker.com/products/docker-desktop/
 2. If you are on Apple Silicon, click on settings in the top right corner, and then navigate to the Features in Development tab. Check the box next to "Use Rosetta for x86/amd64 emulation on Apple Silicon"
-    - This improves performance for x86 in comparison to QEMU
+    - This [improves performance](https://patrickwthomas.net/macos-docker/) for x86 emulation in comparison to QEMU
 3. Clone this repository
     - `$ git clone https://github.com/anirudhi89/CS1632Docker.git`
 4. Using a text editor of your choice, modify `clone.sh` to contain your git repository URL
