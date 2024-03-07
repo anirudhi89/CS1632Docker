@@ -1,2 +1,1 @@
-#!/bin/bash
-docker run  --privileged -it cs1632
+docker run --privileged -it cs1632
