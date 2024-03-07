@@ -11,7 +11,8 @@ This container allows you to run your code in a Linux environment, without wonde
 1. Install and open Docker Desktop: https://www.docker.com/products/docker-desktop/
 2. Clone this repository
     - `$ git clone https://github.com/anirudhi89/CS1632Docker.git`
-3. Using a text editor of your choice, modify `clone.sh` to contain your git repository URL
+3. Using a text editor of your choice, modify `clone.sh` to contain **your git repository URL**
+    - Make sure you do this, or you're going to try to clone my repository, which won't work.
 4. Run `chmod +x ./run.sh` and `chmod +x ./build.sh` to make the scripts executable
 5. Run `./build.sh` to build the Docker image
     - Keep in mind this may take a while
