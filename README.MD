@@ -8,6 +8,8 @@ This container allows you to run your code in a Linux environment, without wonde
 
 This container also (if configured correctly) removes the need for a GitHub Personal Access Token, and removes the need to manually clone your repository.
 
+![](/demo.gif)
+
 ## Dependencies
 - Docker
 - `gh` (GitHub CLI)
