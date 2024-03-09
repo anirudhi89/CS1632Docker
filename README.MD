@@ -12,7 +12,7 @@ This container also (if configured correctly) removes the need for a GitHub Pers
 - Docker
 - `gh` (GitHub CLI)
 - `git`
-- VS Code (optional)
+- VS Code (recommended, but not required)
 
 
 ## To use:
@@ -27,6 +27,12 @@ This container also (if configured correctly) removes the need for a GitHub Pers
 7. You should now be in the container's shell, in the `root` directory. Run `pwd` to verify.
 
 
+## To edit your code:
+1. Execute `./clone.sh` to clone your repository into the container:
+    - Note: You may see a .gitconfig file in the root directory. This file is created by VS Code if you have signed in with GitHub. If you see this file, you can run `./clone.sh` and won't need to input a username/Personal Access Token.
+
+
+
 Note that you should push your changes to your repository before exiting the container, as the container is ephemeral and all data will be destroyed when you exit.
 You can push your code to GitHub using the following commands:
 ```bash
@@ -36,8 +42,7 @@ git push
 ```
 
 
-
-<br><br>
+<br>
 Alternatively, you can pair this container with VS Code to edit your code in a more familiar environment:
 
 
@@ -48,12 +53,6 @@ Alternatively, you can pair this container with VS Code to edit your code in a m
 4. Right-click on the name of your container (cs1632) and click "Attach Visual Studio Code"
     - Do not click on files and start editing there. Click Attach Visual Studio Code to open a new instance of VS Code in the container.
 5. You should now be able to edit your code in VS Code and run it in the Docker container
-
-
-## To edit your code:
-1. Execute `./clone.sh` to clone your repository into the container:
-    - Note: You may see a .gitconfig file in the root directory. This file is created by VS Code if you have signed in with GitHub. If you see this file, you can run `./clone.sh` and won't need to input a username/Personal Access Token.
-
 
 
 ## Disclaimer
