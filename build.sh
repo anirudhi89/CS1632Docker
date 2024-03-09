@@ -15,4 +15,4 @@ echo "" >> clone.sh
 echo "git clone $repo_name" >> clone.sh
 
 # Build Container
-# docker build --output type=docker -t cs1632:latest .
+docker build --output type=docker -t cs1632:latest .
