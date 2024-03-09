@@ -6,16 +6,23 @@ This is a Docker container for CS1632, intended to _simulate_ a Linux environmen
 
 This container allows you to run your code in a Linux environment, without wondering whether thoth is down or not.
 
+This container also (if configured correctly) removes the need for a GitHub Personal Access Token, and removes the need to manually clone your repository.
+
+## Dependencies
+- Docker
+- `gh` (GitHub CLI)
+- `git`
+- VS Code (optional)
+
 
 ## To use:
 1. Install and open Docker Desktop: https://www.docker.com/products/docker-desktop/
 2. Clone this repository
     - `$ git clone https://github.com/anirudhi89/CS1632Docker.git`
-3. Using a text editor of your choice, modify `clone.sh` to contain **your git repository URL**
-    - Make sure you do this, or you're going to try to clone my repository, which won't work.
+3. Make sure you have accepted the Github Classroom assignment.
+    - Note: Now, the code now automatically clones your repository, without the need to modify the `clone.sh` script.
 4. Run `chmod +x ./run.sh` and `chmod +x ./build.sh` to make the scripts executable
 5. Run `./build.sh` to build the Docker image
-    - Keep in mind this may take a while
 6. Run `./run.sh` to run the Docker container
 7. You should now be in the container's shell, in the `root` directory. Run `pwd` to verify.
 
