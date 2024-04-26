@@ -23,7 +23,7 @@ This container also (if configured correctly) removes the need for a GitHub Pers
     - `$ git clone https://github.com/anirudhi89/CS1632Docker.git`
 3. Make sure you have accepted the Github Classroom assignment.
     - Note: Now, the code now automatically clones your repository, without the need to modify the `clone.sh` script.
-4. Run `chmod +x ./run.sh` and `chmod +x ./build.sh` to make the scripts executable
+4. Run `chmod +x ./build.sh` and `chmod +x ./run.sh` to make the scripts executable
 5. Run `./build.sh` to build the Docker image
 6. Run `./run.sh` to run the Docker container
 7. You should now be in the container's shell, in the `root` directory. Run `pwd` to verify.
@@ -54,7 +54,7 @@ Alternatively, you can pair this container with VS Code to edit your code in a m
 3. Open the Docker tab on the left-hand side of VS Code
 4. Right-click on the name of your container (cs1632) and click "Attach Visual Studio Code"
     - Do not click on files and start editing there. Click Attach Visual Studio Code to open a new instance of VS Code in the container.
-5. You should now be able to edit your code in VS Code and run it in the Docker container
+5. You should now be able to edit your code in VS Code, use the integrated terminal (Cmd/Ctrl + `), and use Git in VS Code.
 
 
 ## Disclaimer
